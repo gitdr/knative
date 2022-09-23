@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: helloworld
   namespace: default
+  annotations:
+    networking.knative.dev/http-protocol: "redirected"
 spec:
  template:
   spec:

@@ -3,6 +3,8 @@ kind: KnativeServing
 metadata:
   name: knative-serving
   namespace: knative-serving
+  annotations:
+    networking.knative.dev/http-protocol: "redirected"
 spec:
   ingress:
     istio:

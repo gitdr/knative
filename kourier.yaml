@@ -320,9 +320,9 @@ spec:
           name: controller
           env:
             - name: CERTS_SECRET_NAMESPACE
-              value: ""
+              value: "default"
             - name: CERTS_SECRET_NAME
-              value: ""
+              value: "knative-default-tls"
             - name: SYSTEM_NAMESPACE
               valueFrom:
                 fieldRef:
